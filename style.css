@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#banner{
+    background-image:linear-gradient(rgba(121, 98, 98, 0.5),#128b7f),url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* this code for img and color mixing */
+} 
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    /* this is lines for logo  */
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+    /* this is code for banner-text div */
+}
+.banner-text h1{
+    font-size: 130px;
+    /* this is diff font use for only h1 google font */
+    font-family: 'Kaushan Script', cursive;
+    /* this code for h1 font increase */
+    
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+    /* for paragraph */
+
+}
+
+.banner-btn{
+    margin: 70px auto 0;
+    
+    /* for margin btn */
+
+}
+
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .2px solid #fff;
+    position: relative;
+    z-index: 1;
+    /* for btn a elements */
+    transition: color 0.5s ;
+}
+.banner-btn a span{
+    /* width: 50%; */
+    width: 0; /* initial with 0 */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+    /* this is line code use for btn 50% white */
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+
+.banner-btn a:hover {
+    color: #000;
+}
+
+/* for side nav */
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    /* right: 0; */
+    right: -250px; /* for hideing nav bar */
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    /* this is line for nav bar */
+    transition: 0.5s;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/* this is code for manubtn */
+
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px ;
+    z-index: 3;
+    cursor: pointer;
+
+}
+#menubtn img{
+    width: 20px;
+    margin-top: 15px;
+    /* for img position */
+}
+
+
+
+/* this is code for mobile devices IMP */
+@media  screen and (max-width: 770px) {
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+
+    }
+}
+
+
+
+/* coding for  features section 2  */
+/* *********************************************** */
+
+#features{
+    width: 100%;
+    padding: 70px 0;
+
+}
+
+.title-text{
+    text-align: center;
+    padding: 0 0 70px 0;
+    /* this is line for title text */
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    /* this is lines for p element */
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px ;
+}
+
+.title-text h1{
+    font-size: 50px;
+    /* this code increase h1 element font size */
+}
+
+
+.features-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    /* this is code for Experienced Staff element */
+
+}
+.features{
+    flex-basis: 50%;
+    /* ? */
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+    /* this code for barbar img */
+
+}
+.features-img img{
+    width: 70%;
+    border-radius: 14px;
+
+    /* for img code */
+}
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+    /* for h1 color change and font weight */
+}
+.features-desc{
+    display: flex;
+    align-items: center;
+    margin: 0 0 40px 0;
+}
+
+
+
+
+
+
+
+
+
